@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Start Nav Bar  */
+.navbar .navbar-toggler {
+    font-size: 25px;
+    box-shadow: none;
+    border: none;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 20px;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover{
+    background-color: #ff9696;
+    transform: scale(1.1);
+
+}
+@media (max-width:768px){
+    .navbar .navbar-nav .nav-link {
+    text-align: center;
+    }
+}
+/* End Nav Bar  */
+
+/* The Landing Page  */
+.Landing .text {
+    margin-top: 150px;
+}
+.Landing .text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+}
+.Landing .text p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+.Landing .text button {
+    padding: 15px 30px;
+    transition: 0.5s;
+}
+.Landing .text button:hover{
+    transform: translateY(-10px);
+}
+@media (max-width:992px){
+    .Landing .text {
+        margin-top: 30px;
+    }
+}
+/* End Landing Section */
+
+/* Start Product Section  */
+.product .card img {
+    transition: 0.5s;
+}
+.product .card:hover img{
+    transform:scale(1.02);
+    transition: 0.5s all ease-in-out;
+}
+/* End Product Section  */
+
+/* Start Watch Section  */
+.watch .last-img{
+        margin-top: 35px;
+}
+.watch img {
+    transition: 0.5s;
+}
+.watch img:hover{
+    transform: scale(0.99);
+}
+/* End Watch Section  */
+
+/* Start Popular Section  */
+.popular .head h2 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+.popular .image {
+    position: relative;
+}
+.popular .image svg {
+    font-size: 40px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(350%,-700%);
+    display: none;
+}
+.popular .image:hover svg {
+    display: block;
+}
+@media (max-width:1400px){
+    .popular .image svg{
+        transform: translate(250%,-600%);
+    }
+  
+}
+@media (max-width:1200px){
+    .popular .image svg{
+        transform: translate(200%,-550%);
+    }.watch .last-img{
+        margin-top: 25px;
+}
+ 
+}
+@media (max-width:992px){
+    .popular .image svg{
+        transform: translate(250%,-600%);
+    }.watch .last-img{
+        margin-top: 40px;
+}
+ 
+
+}
+@media (max-width:768px){
+    .popular .image svg{
+        transform: translate(500%,-800%);
+    }
+
+}
+@media (max-width:480px){
+    .popular .image svg{
+        transform: translate(300%,-650%);
+    }
+}
+#pic::after{
+    content: "Add To Cart";
+    height: 3.5rem;
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,140%);
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+#pic:hover::after{
+    display: block;
+}
+
+@media (max-width:1400px){
+    #pic::after{
+        transform: translate(-50%,90%);
+    }
+}
+@media (max-width:1200px){
+    #pic::after{
+        transform: translate(-50%,30%);
+    }
+}
+@media (max-width:992px){
+    #pic::after{
+        transform: translate(-50%,100%);
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:768px){
+    #pic::after{
+        transform: translate(-50%,280%);
+        height: 3.2rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:480px){
+    #pic::after{
+        transform: translate(-50%,220%);
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:430px){
+    #pic::after{
+        transform: translate(-50%,175%);
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:380px){
+    #pic::after{
+        transform: translate(-50%,110%);
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:320px){
+    #pic::after{
+        transform: translate(-50%,20%);
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+}
+/* End Popular Section  */
+
+/* Start Choice Section  */
+.choice {
+    margin-top: 100px;
+}
+.choice .text {
+    margin-top: 30px;
+}
+.choice  .text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+.choice  .text p {
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.choice .text button {
+    margin-top: 15px;    
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.choice .text button:hover{
+    transform: translateY(-10px);
+}
+/* End Choice Section  */
+
+/* Start Red Section  */
+.red .row {
+    background-image: url("img/gallery/vidoe_more.png");
+    background-size: cover;
+}
+.red .row svg {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+/* End Red Section  */
+
+/* Start Footer Section  */
+footer li {
+    margin-bottom: 10px;
+
+}
+footer a {
+    text-decoration: none;
+}
