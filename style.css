@@ -53,12 +53,14 @@
 /* End Landing Section */
 
 /* Start Product Section  */
-.product .card img {
+.product .card .image {
+    overflow: hidden;
+}
+.product .card .image img {
     transition: 0.5s;
 }
 .product .card:hover img{
-    transform:scale(1.02);
-    transition: 0.5s all ease-in-out;
+    transform:scale(1.1);
 }
 /* End Product Section  */
 
