@@ -65,14 +65,17 @@
 /* End Product Section  */
 
 /* Start Watch Section  */
-.watch .last-img{
-        margin-top: 35px;
+.watch #last-img{
+        margin-top: 37px;
 }
-.watch img {
+.watch .images {
+    overflow: hidden;
+}
+.watch .images img {
     transition: 0.5s;
 }
-.watch img:hover{
-    transform: scale(0.99);
+.watch .images:hover img{
+    transform: scale(1.1);
 }
 /* End Watch Section  */
 
